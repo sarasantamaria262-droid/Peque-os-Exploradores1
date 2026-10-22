@@ -1,0 +1,100 @@
+/* SECCIÓN VERDE DE FONDO */
+.porque-seccion {
+  width: 100%;
+  max-width: 1500px;
+  margin: 30px auto;
+  background-color: #f2f7e9;
+  border: 2px solid #e1eed0;
+  border-radius: 25px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+/* TÍTULO ¿POR QUÉ PEQUEÑOS EXPLORADORES? */
+.porque-titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.porque-titulo img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* GRILLA DE 3 TARJETAS */
+.porque-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+
+/* CADA TARJETA INDIVIDUAL */
+.porque-card {
+  flex: 1 1 280px;
+  max-width: 310px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.25s ease;
+}
+
+.porque-card:hover {
+  transform: translateY(-6px);
+}
+
+/* LAS IMÁGENES DENTRO DE LAS TARJETAS */
+.porque-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .porque-seccion {
+    max-width: 95%;
+    padding: 25px 15px;
+  }
+  .porque-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .porque-seccion {
+    margin: 20px auto;
+    padding: 20px 12px;
+    gap: 18px;
+  }
+  .porque-titulo img {
+    max-width: 95%;
+  }
+  .porque-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  .porque-card {
+    max-width: 280px;
+    width: 90%;
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .porque-card {
+    max-width: 240px;
+  }
+}
